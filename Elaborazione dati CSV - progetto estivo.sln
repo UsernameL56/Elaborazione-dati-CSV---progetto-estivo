@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elaborazione dati CSV - progetto estivo", "Elaborazione dati CSV - progetto estivo\Elaborazione dati CSV - progetto estivo.csproj", "{1394654A-747C-4A3F-A9A7-05761E3E3948}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funzioni", "Funzioni\Funzioni.csproj", "{EA6884FF-6DED-4556-9FEB-6AD69D0611A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1394654A-747C-4A3F-A9A7-05761E3E3948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1394654A-747C-4A3F-A9A7-05761E3E3948}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1394654A-747C-4A3F-A9A7-05761E3E3948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6884FF-6DED-4556-9FEB-6AD69D0611A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6884FF-6DED-4556-9FEB-6AD69D0611A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6884FF-6DED-4556-9FEB-6AD69D0611A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6884FF-6DED-4556-9FEB-6AD69D0611A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
