@@ -16,7 +16,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo
     public partial class Form1 : Form
     {
         string line, file;
-        int campi, RecordLength;
+        int n, RecordLength;
 
         public Form1()
         {
@@ -46,9 +46,19 @@ namespace Elaborazione_dati_CSV___progetto_estivo
 
         private void Funzione2_Click(object sender, EventArgs e)
         {
-            campi = F.NumeroCampi(file, RecordLength);
-            MessageBox.Show("Il numero di campi è: " + campi, "info");
+            n = F.NumeroCampi(file, RecordLength);
+            MessageBox.Show("Il numero di campi è: " + n, "info");
         }
+
+        private void Funzione3_Click(object sender, EventArgs e)
+        {
+            n = F.LunghezzaMassima(file, RecordLength);
+            MessageBox.Show("La lunghezza massima dei record presenti è: " + n, "info");
+        }
+
+
+
+
 
     }
 }

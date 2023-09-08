@@ -30,6 +30,7 @@
         {
             this.Funzione1 = new System.Windows.Forms.Button();
             this.Funzione2 = new System.Windows.Forms.Button();
+            this.Funzione3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Funzione1
@@ -52,11 +53,22 @@
             this.Funzione2.UseVisualStyleBackColor = true;
             this.Funzione2.Click += new System.EventHandler(this.Funzione2_Click);
             // 
+            // Funzione3
+            // 
+            this.Funzione3.Location = new System.Drawing.Point(328, 92);
+            this.Funzione3.Name = "Funzione3";
+            this.Funzione3.Size = new System.Drawing.Size(136, 42);
+            this.Funzione3.TabIndex = 2;
+            this.Funzione3.Text = "Lunghezza massima";
+            this.Funzione3.UseVisualStyleBackColor = true;
+            this.Funzione3.Click += new System.EventHandler(this.Funzione3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 552);
+            this.Controls.Add(this.Funzione3);
             this.Controls.Add(this.Funzione2);
             this.Controls.Add(this.Funzione1);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button Funzione1;
         private System.Windows.Forms.Button Funzione2;
+        private System.Windows.Forms.Button Funzione3;
     }
 }
 
