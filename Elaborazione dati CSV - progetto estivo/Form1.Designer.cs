@@ -31,11 +31,14 @@
             this.Funzione1 = new System.Windows.Forms.Button();
             this.Funzione2 = new System.Windows.Forms.Button();
             this.Funzione3 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Funzione5 = new System.Windows.Forms.Button();
+            this.Funzioni6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Funzione1
             // 
-            this.Funzione1.Location = new System.Drawing.Point(35, 92);
+            this.Funzione1.Location = new System.Drawing.Point(12, 12);
             this.Funzione1.Name = "Funzione1";
             this.Funzione1.Size = new System.Drawing.Size(136, 42);
             this.Funzione1.TabIndex = 0;
@@ -45,7 +48,7 @@
             // 
             // Funzione2
             // 
-            this.Funzione2.Location = new System.Drawing.Point(186, 92);
+            this.Funzione2.Location = new System.Drawing.Point(154, 12);
             this.Funzione2.Name = "Funzione2";
             this.Funzione2.Size = new System.Drawing.Size(136, 42);
             this.Funzione2.TabIndex = 1;
@@ -55,7 +58,7 @@
             // 
             // Funzione3
             // 
-            this.Funzione3.Location = new System.Drawing.Point(328, 92);
+            this.Funzione3.Location = new System.Drawing.Point(296, 12);
             this.Funzione3.Name = "Funzione3";
             this.Funzione3.Size = new System.Drawing.Size(136, 42);
             this.Funzione3.TabIndex = 2;
@@ -63,11 +66,41 @@
             this.Funzione3.UseVisualStyleBackColor = true;
             this.Funzione3.Click += new System.EventHandler(this.Funzione3_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 88);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1392, 452);
+            this.panel1.TabIndex = 3;
+            // 
+            // Funzione5
+            // 
+            this.Funzione5.Location = new System.Drawing.Point(438, 12);
+            this.Funzione5.Name = "Funzione5";
+            this.Funzione5.Size = new System.Drawing.Size(136, 42);
+            this.Funzione5.TabIndex = 4;
+            this.Funzione5.Text = "Record in coda";
+            this.Funzione5.UseVisualStyleBackColor = true;
+            this.Funzione5.Click += new System.EventHandler(this.Funzione5_Click);
+            // 
+            // Funzioni6
+            // 
+            this.Funzioni6.Location = new System.Drawing.Point(580, 12);
+            this.Funzioni6.Name = "Funzioni6";
+            this.Funzioni6.Size = new System.Drawing.Size(136, 42);
+            this.Funzioni6.TabIndex = 5;
+            this.Funzioni6.Text = "tre campi a scelta";
+            this.Funzioni6.UseVisualStyleBackColor = true;
+            this.Funzioni6.Click += new System.EventHandler(this.Funzioni6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 552);
+            this.Controls.Add(this.Funzioni6);
+            this.Controls.Add(this.Funzione5);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Funzione3);
             this.Controls.Add(this.Funzione2);
             this.Controls.Add(this.Funzione1);
@@ -83,6 +116,9 @@
         private System.Windows.Forms.Button Funzione1;
         private System.Windows.Forms.Button Funzione2;
         private System.Windows.Forms.Button Funzione3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Funzione5;
+        private System.Windows.Forms.Button Funzioni6;
     }
 }
 

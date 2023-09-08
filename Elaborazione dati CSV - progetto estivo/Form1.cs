@@ -10,13 +10,20 @@ using System.Windows.Forms;
 using System.IO;
 using FunzioniCSV;
 using System.Runtime.Remoting.Contexts;
+using Elaborazione_dati_CSV___progetto_estivo.user;
 
 namespace Elaborazione_dati_CSV___progetto_estivo
 {
     public partial class Form1 : Form
     {
-        string line, file;
-        int n, RecordLength;
+        public static string line, file;
+        public static int n, RecordLength;
+        public static UserControlHome home;
+        public static Panel Panel1;
+        UserControlRecordCoda rc;
+        UserControlTreCampi tc;
+        
+
 
         public Form1()
         {
@@ -24,7 +31,10 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             line = "";
             file = "corsi.csv";
             RecordLength = 250;
-
+            home = new UserControlHome();
+            rc = new UserControlRecordCoda();
+            tc = new UserControlTreCampi();
+            Panel1 = panel1;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,6 +47,9 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             }
             reader.Close();
             writer.Close();
+
+           
+            F.addUserControl(panel1, home);
         }
 
         private void Funzione1_Click(object sender, EventArgs e)
@@ -54,6 +67,16 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         {
             n = F.LunghezzaMassima(file, RecordLength);
             MessageBox.Show("La lunghezza massima dei record presenti è: " + n, "info");
+        }
+
+        private void Funzione5_Click(object sender, EventArgs e)
+        {
+           
+            F.addUserControl(panel1, rc);
+        }
+        private void Funzioni6_Click(object sender, EventArgs e)
+        {
+            F.addUserControl(panel1, tc);
         }
 
 

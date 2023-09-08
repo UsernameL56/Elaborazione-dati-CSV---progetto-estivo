@@ -57,6 +57,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\UserControlTreCampi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user\UserControlTreCampi.Designer.cs">
+      <DependentUpon>UserControlTreCampi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserControlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user\UserControlHome.Designer.cs">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserControlRecordCoda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user\UserControlRecordCoda.Designer.cs">
+      <DependentUpon>UserControlRecordCoda.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,7 +86,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="user\UserControlTreCampi.resx">
+      <DependentUpon>UserControlTreCampi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\UserControlHome.resx">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\UserControlRecordCoda.resx">
+      <DependentUpon>UserControlRecordCoda.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
