@@ -17,7 +17,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo
     public partial class Form1 : Form
     {
         public static string line, file, appoggio;
-        public static int n, RecordLength;
+        public static int n, RecordLength, controllo;
         public static UserControlHome home;
         public static Panel Panel1;
         
@@ -28,6 +28,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             file = "corsi.csv";
             appoggio = "Originale.csv";
             RecordLength = 250;
+            controllo = 0;
             home = new UserControlHome();
             Panel1 = panel1;
         }
@@ -40,7 +41,15 @@ namespace Elaborazione_dati_CSV___progetto_estivo
 
         private void Funzione1_Click(object sender, EventArgs e)
         {
-            F.AggiuntaRecords(file, RecordLength);
+            if(controllo == 0)
+            {
+                F.AggiuntaRecords(file, RecordLength);
+                MessageBox.Show("I campi \"miovalore\" e \"cancellazione logica\" sono stati aggiunti con successo", "Informazione", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                controllo++;
+            }
+            else
+                MessageBox.Show("Questa funzione è già stata utilizzata", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
         }
 
         private void Funzione2_Click(object sender, EventArgs e)
@@ -55,8 +64,14 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         }
         private void Funzione5_Click(object sender, EventArgs e)
         {
-            UserControlRecordCoda rc = new UserControlRecordCoda();
-            F.addUserControl(panel1, rc);
+            if (controllo == 1)
+            {
+                UserControlRecordCoda rc = new UserControlRecordCoda();
+                F.addUserControl(panel1, rc);
+            }
+            else
+                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare la prima", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
         }
         private void Funzioni6_Click(object sender, EventArgs e)
         {
@@ -72,6 +87,17 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         {
             UserControlModifica md = new UserControlModifica();
             F.addUserControl(panel1, md);
+        }
+        private void Funzione9_Click(object sender, EventArgs e)
+        {
+            if(controllo == 1)
+            {
+                UserControlCancella cn = new UserControlCancella();
+                F.addUserControl(panel1, cn);
+            }
+            else
+                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare la prima", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
         }
 
 

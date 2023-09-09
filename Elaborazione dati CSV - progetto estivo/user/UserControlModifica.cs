@@ -41,9 +41,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo.user
                         listView2.Clear();
                         listView2.Items.Add(line);
                     }
-                    
                 }
-                    
             }
             else
                 MessageBox.Show("Nella riga bisogna inserire SOLO input di tipo Int", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
