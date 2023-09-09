@@ -54,7 +54,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(1150, 164);
+            this.textBox6.Location = new System.Drawing.Point(262, 164);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(186, 33);
@@ -62,15 +62,15 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(929, 164);
+            this.textBox5.Location = new System.Drawing.Point(453, 164);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 33);
+            this.textBox5.Size = new System.Drawing.Size(277, 33);
             this.textBox5.TabIndex = 3;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(737, 164);
+            this.textBox4.Location = new System.Drawing.Point(736, 164);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(186, 33);
@@ -78,15 +78,15 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(454, 164);
+            this.textBox3.Location = new System.Drawing.Point(928, 164);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 33);
+            this.textBox3.Size = new System.Drawing.Size(215, 33);
             this.textBox3.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(262, 164);
+            this.textBox2.Location = new System.Drawing.Point(1150, 164);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 33);

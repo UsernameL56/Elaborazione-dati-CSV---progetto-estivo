@@ -16,20 +16,17 @@ namespace Elaborazione_dati_CSV___progetto_estivo
 {
     public partial class Form1 : Form
     {
-        public static string line, file;
+        public static string line, file, appoggio;
         public static int n, RecordLength;
         public static UserControlHome home;
         public static Panel Panel1;
         
-        
-        
-
-
         public Form1()
         {
             InitializeComponent();
             line = "";
             file = "corsi.csv";
+            appoggio = "Originale.txt";
             RecordLength = 250;
             home = new UserControlHome();
             Panel1 = panel1;
@@ -37,16 +34,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader("Nuovo Documento di testo.txt");
-            StreamWriter writer = new StreamWriter("corsi.csv");
-            while ((line = reader.ReadLine()) != null)
-            {
-                writer.WriteLine((line +";").PadRight(RecordLength - 4) + "##");
-            }
-            reader.Close();
-            writer.Close();
-
-           
+            F.Spaziatura(file, appoggio, RecordLength);
             F.addUserControl(panel1, home);
         }
 
