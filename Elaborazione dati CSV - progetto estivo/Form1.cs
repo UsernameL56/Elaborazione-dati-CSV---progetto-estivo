@@ -20,8 +20,8 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         public static int n, RecordLength;
         public static UserControlHome home;
         public static Panel Panel1;
-        UserControlRecordCoda rc;
-        UserControlTreCampi tc;
+        
+        
         
 
 
@@ -32,8 +32,6 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             file = "corsi.csv";
             RecordLength = 250;
             home = new UserControlHome();
-            rc = new UserControlRecordCoda();
-            tc = new UserControlTreCampi();
             Panel1 = panel1;
         }
 
@@ -71,11 +69,12 @@ namespace Elaborazione_dati_CSV___progetto_estivo
 
         private void Funzione5_Click(object sender, EventArgs e)
         {
-           
+            UserControlRecordCoda rc = new UserControlRecordCoda();
             F.addUserControl(panel1, rc);
         }
         private void Funzioni6_Click(object sender, EventArgs e)
         {
+            UserControlTreCampi tc = new UserControlTreCampi();
             F.addUserControl(panel1, tc);
         }
 
