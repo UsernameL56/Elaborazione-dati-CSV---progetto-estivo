@@ -35,7 +35,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo.user
         {
             if ((int)numericUpDown1.Value > x || (int)numericUpDown2.Value > x || (int)numericUpDown3.Value > x)
             {
-                MessageBox.Show("Il numero massimo di campi è: " + x +"\nInserire un numero minore o uguale a: " + x, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Il numero massimo di campi è: " + x +"\nInserire un numero minore o uguale a: " + x, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {   

@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Funzione5 = new System.Windows.Forms.Button();
             this.Funzioni6 = new System.Windows.Forms.Button();
+            this.Funzione7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Funzione1
@@ -89,15 +90,27 @@
             this.Funzioni6.Name = "Funzioni6";
             this.Funzioni6.Size = new System.Drawing.Size(136, 42);
             this.Funzioni6.TabIndex = 5;
-            this.Funzioni6.Text = "tre campi a scelta";
+            this.Funzioni6.Text = "Tre campi a scelta";
             this.Funzioni6.UseVisualStyleBackColor = true;
             this.Funzioni6.Click += new System.EventHandler(this.Funzioni6_Click);
+            // 
+            // Funzione7
+            // 
+            this.Funzione7.Location = new System.Drawing.Point(722, 12);
+            this.Funzione7.Name = "Funzione7";
+            this.Funzione7.Size = new System.Drawing.Size(136, 42);
+            this.Funzione7.TabIndex = 6;
+            this.Funzione7.Text = "Ricerca";
+            this.Funzione7.UseVisualStyleBackColor = true;
+            this.Funzione7.Click += new System.EventHandler(this.Funzione7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1416, 552);
+            this.Controls.Add(this.Funzione7);
             this.Controls.Add(this.Funzioni6);
             this.Controls.Add(this.Funzione5);
             this.Controls.Add(this.panel1);
@@ -119,6 +132,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Funzione5;
         private System.Windows.Forms.Button Funzioni6;
+        private System.Windows.Forms.Button Funzione7;
     }
 }
 

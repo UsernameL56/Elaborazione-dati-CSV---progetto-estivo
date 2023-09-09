@@ -26,7 +26,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             InitializeComponent();
             line = "";
             file = "corsi.csv";
-            appoggio = "Originale.txt";
+            appoggio = "Originale.csv";
             RecordLength = 250;
             home = new UserControlHome();
             Panel1 = panel1;
@@ -46,13 +46,13 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         private void Funzione2_Click(object sender, EventArgs e)
         {
             n = F.NumeroCampi(file, RecordLength);
-            MessageBox.Show("Il numero di campi è: " + n, "info");
+            MessageBox.Show("Il numero di campi è: " + n, "Informazione", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Funzione3_Click(object sender, EventArgs e)
         {
             n = F.LunghezzaMassima(file, RecordLength);
-            MessageBox.Show("La lunghezza massima dei record presenti è: " + n, "info");
+            MessageBox.Show("La lunghezza massima dei record presenti è: " + n, "Informazione", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Funzione5_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace Elaborazione_dati_CSV___progetto_estivo
         {
             UserControlTreCampi tc = new UserControlTreCampi();
             F.addUserControl(panel1, tc);
+        }
+        private void Funzione7_Click(object sender, EventArgs e)
+        {
+            UserControlRicerca r = new UserControlRicerca();
+            F.addUserControl(panel1, r);
         }
 
 

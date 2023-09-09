@@ -57,6 +57,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\UserControlRicerca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user\UserControlRicerca.Designer.cs">
+      <DependentUpon>UserControlRicerca.cs</DependentUpon>
+    </Compile>
     <Compile Include="user\UserControlTreCampi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="user\UserControlRicerca.resx">
+      <DependentUpon>UserControlRicerca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="user\UserControlTreCampi.resx">
       <DependentUpon>UserControlTreCampi.cs</DependentUpon>
     </EmbeddedResource>
