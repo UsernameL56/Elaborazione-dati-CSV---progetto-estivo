@@ -64,9 +64,9 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(175, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 34);
+            this.label1.Size = new System.Drawing.Size(74, 34);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Input";
+            this.label1.Text = "Riga";
             // 
             // textBox1
             // 

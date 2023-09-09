@@ -36,7 +36,7 @@ namespace Elaborazione_dati_CSV___progetto_estivo.user
                     
             }
             else
-                MessageBox.Show("Inserire un input SOLO di tipo Int", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nella riga bisogna inserire SOLO input di tipo Int", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
            
         }
 

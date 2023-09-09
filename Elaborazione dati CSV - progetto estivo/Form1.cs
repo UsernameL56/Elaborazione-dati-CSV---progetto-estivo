@@ -48,13 +48,11 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             n = F.NumeroCampi(file, RecordLength);
             MessageBox.Show("Il numero di campi è: " + n, "Informazione", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
         private void Funzione3_Click(object sender, EventArgs e)
         {
             n = F.LunghezzaMassima(file, RecordLength);
             MessageBox.Show("La lunghezza massima dei record presenti è: " + n, "Informazione", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
         private void Funzione5_Click(object sender, EventArgs e)
         {
             UserControlRecordCoda rc = new UserControlRecordCoda();
@@ -70,7 +68,11 @@ namespace Elaborazione_dati_CSV___progetto_estivo
             UserControlRicerca r = new UserControlRicerca();
             F.addUserControl(panel1, r);
         }
-
+        private void Funzione8_Click(object sender, EventArgs e)
+        {
+            UserControlModifica md = new UserControlModifica();
+            F.addUserControl(panel1, md);
+        }
 
 
 

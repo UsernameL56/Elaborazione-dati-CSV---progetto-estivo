@@ -35,6 +35,7 @@
             this.Funzione5 = new System.Windows.Forms.Button();
             this.Funzioni6 = new System.Windows.Forms.Button();
             this.Funzione7 = new System.Windows.Forms.Button();
+            this.Funzione8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Funzione1
@@ -104,12 +105,23 @@
             this.Funzione7.UseVisualStyleBackColor = true;
             this.Funzione7.Click += new System.EventHandler(this.Funzione7_Click);
             // 
+            // Funzione8
+            // 
+            this.Funzione8.Location = new System.Drawing.Point(864, 12);
+            this.Funzione8.Name = "Funzione8";
+            this.Funzione8.Size = new System.Drawing.Size(136, 42);
+            this.Funzione8.TabIndex = 7;
+            this.Funzione8.Text = "Modifica";
+            this.Funzione8.UseVisualStyleBackColor = true;
+            this.Funzione8.Click += new System.EventHandler(this.Funzione8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1416, 552);
+            this.Controls.Add(this.Funzione8);
             this.Controls.Add(this.Funzione7);
             this.Controls.Add(this.Funzioni6);
             this.Controls.Add(this.Funzione5);
@@ -133,6 +145,7 @@
         private System.Windows.Forms.Button Funzione5;
         private System.Windows.Forms.Button Funzioni6;
         private System.Windows.Forms.Button Funzione7;
+        private System.Windows.Forms.Button Funzione8;
     }
 }
 
