@@ -37,13 +37,17 @@
             this.Funzione7 = new System.Windows.Forms.Button();
             this.Funzione8 = new System.Windows.Forms.Button();
             this.Funzione9 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.legenda = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Funzione1
             // 
-            this.Funzione1.Location = new System.Drawing.Point(12, 12);
+            this.Funzione1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione1.Location = new System.Drawing.Point(12, 29);
             this.Funzione1.Name = "Funzione1";
-            this.Funzione1.Size = new System.Drawing.Size(136, 42);
+            this.Funzione1.Size = new System.Drawing.Size(145, 53);
             this.Funzione1.TabIndex = 0;
             this.Funzione1.Text = "Aggiunta in coda";
             this.Funzione1.UseVisualStyleBackColor = true;
@@ -51,9 +55,10 @@
             // 
             // Funzione2
             // 
-            this.Funzione2.Location = new System.Drawing.Point(154, 12);
+            this.Funzione2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione2.Location = new System.Drawing.Point(163, 29);
             this.Funzione2.Name = "Funzione2";
-            this.Funzione2.Size = new System.Drawing.Size(136, 42);
+            this.Funzione2.Size = new System.Drawing.Size(145, 53);
             this.Funzione2.TabIndex = 1;
             this.Funzione2.Text = "Numero campi";
             this.Funzione2.UseVisualStyleBackColor = true;
@@ -61,9 +66,10 @@
             // 
             // Funzione3
             // 
-            this.Funzione3.Location = new System.Drawing.Point(296, 12);
+            this.Funzione3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione3.Location = new System.Drawing.Point(314, 29);
             this.Funzione3.Name = "Funzione3";
-            this.Funzione3.Size = new System.Drawing.Size(136, 42);
+            this.Funzione3.Size = new System.Drawing.Size(145, 53);
             this.Funzione3.TabIndex = 2;
             this.Funzione3.Text = "Lunghezza massima";
             this.Funzione3.UseVisualStyleBackColor = true;
@@ -78,9 +84,10 @@
             // 
             // Funzione5
             // 
-            this.Funzione5.Location = new System.Drawing.Point(438, 12);
+            this.Funzione5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione5.Location = new System.Drawing.Point(465, 29);
             this.Funzione5.Name = "Funzione5";
-            this.Funzione5.Size = new System.Drawing.Size(136, 42);
+            this.Funzione5.Size = new System.Drawing.Size(145, 53);
             this.Funzione5.TabIndex = 4;
             this.Funzione5.Text = "Record in coda";
             this.Funzione5.UseVisualStyleBackColor = true;
@@ -88,9 +95,10 @@
             // 
             // Funzioni6
             // 
-            this.Funzioni6.Location = new System.Drawing.Point(580, 12);
+            this.Funzioni6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzioni6.Location = new System.Drawing.Point(616, 29);
             this.Funzioni6.Name = "Funzioni6";
-            this.Funzioni6.Size = new System.Drawing.Size(136, 42);
+            this.Funzioni6.Size = new System.Drawing.Size(145, 53);
             this.Funzioni6.TabIndex = 5;
             this.Funzioni6.Text = "Tre campi a scelta";
             this.Funzioni6.UseVisualStyleBackColor = true;
@@ -98,9 +106,10 @@
             // 
             // Funzione7
             // 
-            this.Funzione7.Location = new System.Drawing.Point(722, 12);
+            this.Funzione7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione7.Location = new System.Drawing.Point(918, 29);
             this.Funzione7.Name = "Funzione7";
-            this.Funzione7.Size = new System.Drawing.Size(136, 42);
+            this.Funzione7.Size = new System.Drawing.Size(145, 53);
             this.Funzione7.TabIndex = 6;
             this.Funzione7.Text = "Ricerca";
             this.Funzione7.UseVisualStyleBackColor = true;
@@ -108,9 +117,10 @@
             // 
             // Funzione8
             // 
-            this.Funzione8.Location = new System.Drawing.Point(864, 12);
+            this.Funzione8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione8.Location = new System.Drawing.Point(767, 29);
             this.Funzione8.Name = "Funzione8";
-            this.Funzione8.Size = new System.Drawing.Size(136, 42);
+            this.Funzione8.Size = new System.Drawing.Size(145, 53);
             this.Funzione8.TabIndex = 7;
             this.Funzione8.Text = "Modifica";
             this.Funzione8.UseVisualStyleBackColor = true;
@@ -118,13 +128,43 @@
             // 
             // Funzione9
             // 
-            this.Funzione9.Location = new System.Drawing.Point(1006, 12);
+            this.Funzione9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Funzione9.Location = new System.Drawing.Point(1069, 29);
             this.Funzione9.Name = "Funzione9";
-            this.Funzione9.Size = new System.Drawing.Size(136, 42);
+            this.Funzione9.Size = new System.Drawing.Size(145, 53);
             this.Funzione9.TabIndex = 8;
             this.Funzione9.Text = "Cancellazione";
             this.Funzione9.UseVisualStyleBackColor = true;
             this.Funzione9.Click += new System.EventHandler(this.Funzione9_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Controls.Add(this.legenda);
+            this.panel2.Controls.Add(this.Funzione1);
+            this.panel2.Controls.Add(this.Funzione9);
+            this.panel2.Controls.Add(this.Funzione2);
+            this.panel2.Controls.Add(this.Funzione8);
+            this.panel2.Controls.Add(this.Funzione3);
+            this.panel2.Controls.Add(this.Funzione7);
+            this.panel2.Controls.Add(this.Funzione5);
+            this.panel2.Controls.Add(this.Funzioni6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1416, 100);
+            this.panel2.TabIndex = 9;
+            // 
+            // legenda
+            // 
+            this.legenda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.legenda.Location = new System.Drawing.Point(1259, 29);
+            this.legenda.Name = "legenda";
+            this.legenda.Size = new System.Drawing.Size(145, 53);
+            this.legenda.TabIndex = 9;
+            this.legenda.Text = "Legenda";
+            this.legenda.UseVisualStyleBackColor = true;
+            this.legenda.Click += new System.EventHandler(this.legenda_Click);
             // 
             // Form1
             // 
@@ -132,18 +172,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1416, 552);
-            this.Controls.Add(this.Funzione9);
-            this.Controls.Add(this.Funzione8);
-            this.Controls.Add(this.Funzione7);
-            this.Controls.Add(this.Funzioni6);
-            this.Controls.Add(this.Funzione5);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Funzione3);
-            this.Controls.Add(this.Funzione2);
-            this.Controls.Add(this.Funzione1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -159,6 +193,8 @@
         private System.Windows.Forms.Button Funzione7;
         private System.Windows.Forms.Button Funzione8;
         private System.Windows.Forms.Button Funzione9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button legenda;
     }
 }
 

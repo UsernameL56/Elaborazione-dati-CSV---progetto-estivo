@@ -132,6 +132,7 @@
             this.Controls.Add(this.cancellazioneCancella);
             this.Name = "UserControlCancella";
             this.Size = new System.Drawing.Size(1392, 452);
+            this.Load += new System.EventHandler(this.UserControlCancella_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

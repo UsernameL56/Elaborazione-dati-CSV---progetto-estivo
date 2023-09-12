@@ -70,9 +70,10 @@ namespace Elaborazione_dati_CSV___progetto_estivo
                 F.addUserControl(panel1, rc);
             }
             else
-                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare la prima", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare l'Aggiunta in coda", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+
         private void Funzioni6_Click(object sender, EventArgs e)
         {
             UserControlTreCampi tc = new UserControlTreCampi();
@@ -96,8 +97,13 @@ namespace Elaborazione_dati_CSV___progetto_estivo
                 F.addUserControl(panel1, cn);
             }
             else
-                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare la prima", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Prima di utilizzare questa funzione è necessario utilizzare l'Aggiunta in coda", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             
+        }
+        private void legenda_Click(object sender, EventArgs e)
+        {
+            UserControlLegenda lg = new UserControlLegenda();
+            F.addUserControl(panel1, lg);
         }
 
 

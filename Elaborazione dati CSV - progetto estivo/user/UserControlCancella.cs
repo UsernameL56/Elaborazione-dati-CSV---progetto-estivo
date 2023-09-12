@@ -44,6 +44,11 @@ namespace Elaborazione_dati_CSV___progetto_estivo.user
                 MessageBox.Show("Nella riga bisogna inserire SOLO input di tipo Int", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        private void UserControlCancella_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void chiusuraCancella_Click(object sender, EventArgs e)
         {
             F.addUserControl(Form1.Panel1, Form1.home);
